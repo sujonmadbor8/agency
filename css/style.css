@@ -370,11 +370,17 @@ header {
 .team_icon img {
   margin-right: 15px;
   width: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.team_icon img:hover {
+  transform: scale(1.1);
 }
 /* team end  */
 
 /* testimonial start  */
 .testimonial_card {
+  margin: 0 20px;
   padding: 30px 30px 30px 40px;
   background-color: var(--color_grey);
 }
@@ -483,3 +489,38 @@ hr {
   padding: 40px 0;
 }
 /* footer end  */
+
+/* scroll to top start  */
+.backToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  border: none;
+  color: var(--white_color);
+  border-radius: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.backToTopBtn:not(:hover) {
+  background: var(--purple_color);
+  box-shadow: 0 0 10px var(--black_color);
+}
+.backToTopBtn:hover {
+  background: var(--purple_color);
+}
+.backToTopBtn.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.backToTopBtn:not(.active) {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* scroll to top end  */
