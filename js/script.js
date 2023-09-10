@@ -66,7 +66,7 @@ $(function () {
   $(".review_slide").slick({
     slidesToShow: 2,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     responsive: [
